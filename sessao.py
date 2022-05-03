@@ -1,7 +1,8 @@
 class Sessao:
-    def __init__(self, nomeFilme, duracaoFilme):
+    def __init__(self, nomeFilme, data, hora):
         self.__nomeFilme = nomeFilme
-        self.__duracaoFilme = duracaoFilme
+        self.__data = data
+        self.__hora = hora
 
     def getNomeFilme(self):
         return self.__nomeFilme
@@ -9,8 +10,14 @@ class Sessao:
     def setNomeFilme(self, nome):
         self.__nomeFilme = nome
 
-    def getDuracaoFilme(self):
-        return self.__duracaoFilme
+    def getData(self):
+        return self.__data
 
-    def setDuracaoFilme(self, duracaoFilme):
-        self.__duracaoFilme = duracaoFilme
+    def setData(self, data):
+        self.__data = data
+
+    def getHora(self):
+        return self.__hora
+
+    def setHora(self, hora):
+        self.__hora = hora
