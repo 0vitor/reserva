@@ -1,3 +1,3 @@
-from Reserva import Reserva 
+from reserva import Reserva 
 
 print(Reserva('sala', 'filme', 'dia', 'sessao'))    

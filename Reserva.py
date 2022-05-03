@@ -1,6 +1,6 @@
 class Reserva:
 
-    def __init__(self, sala, filme, dia, sessao):
+    def __init__(self, sala, filme, dia, sessao, fila, cadeira):
         self.__sala = sala
         self.__filme = filme
         self.__dia = dia
