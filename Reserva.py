@@ -1,13 +1,14 @@
 class Reserva:
-    __reservas = []
 
-    
     def __init__(self, sala, filme, dia, sessao):
         self.__sala = sala
         self.__filme = filme
         self.__dia = dia
         self.__sessao = sessao
-    
+
+    def imprimir(self):
+        print(f'sala: {self.__sala}, filme: {self.__filme}, dia: {self.__dia}, sessao: {self.__sessao}')
+
     def getSala(self):
         return self.__sala
 
