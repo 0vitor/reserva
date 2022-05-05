@@ -1,4 +1,5 @@
 class Sessao:
+    __arranjoCadeiras = []
     def __init__(self, nomeFilme, data, hora):
         self.__nomeFilme = nomeFilme
         self.__data = data
@@ -21,3 +22,12 @@ class Sessao:
 
     def setHora(self, hora):
         self.__hora = hora
+
+    def getArranjoCadeiras(self):
+        return self.__arranjoCadeiras
+
+    def setArranjoDeCadeiras(self, arranjo):
+        self.__arranjoCadeiras = arranjo
+    
+    def ocuparCadeira(self, fila, cadeira):
+        self.__arranjoCadeiras[fila][cadeira] = True

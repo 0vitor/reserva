@@ -1,13 +1,13 @@
 class Reserva:
 
-    def __init__(self, sala, filme, dia, sessao, fila, cadeira):
+    def __init__(self, sala, sessao, fila, cadeira):
         self.__sala = sala
-        self.__filme = filme
-        self.__dia = dia
         self.__sessao = sessao
+        self.__fila = fila
+        self.__cadeira = cadeira
 
     def imprimir(self):
-        print(f'sala: {self.__sala}, filme: {self.__filme}, dia: {self.__dia}, sessao: {self.__sessao}')
+        print(f'sala: {self.__sala}, filme: {self.__filme}, sessao: {self.__sessao}, fila: {self.__fila}, cadeira: {self.__cadeira}')
 
     def getSala(self):
         return self.__sala
@@ -17,6 +17,12 @@ class Reserva:
 
     def getDia(self):
         return self.__dia
+
+    def getFila(self):
+        return self.__fila
+
+    def getCadeira(self):
+        return self.__cadeira
 
     def getSessao(self):
         return self.__sessao
